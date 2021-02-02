@@ -1,0 +1,130 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS08 U?
+U 1 1 601A66F6
+P 4350 3000
+F 0 "U?" H 4350 3325 50  0000 C CNN
+F 1 "74LS08" H 4350 3234 50  0000 C CNN
+F 2 "" H 4350 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4350 3000 50  0001 C CNN
+	1    4350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 2 1 601A74BA
+P 4350 3300
+F 0 "U?" H 4600 3400 50  0000 C CNN
+F 1 "74LS08" H 4650 3250 50  0000 C CNN
+F 2 "" H 4350 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4350 3300 50  0001 C CNN
+	2    4350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 3 1 601A7EB4
+P 4350 3600
+F 0 "U?" H 4600 3700 50  0000 C CNN
+F 1 "74LS08" H 4650 3550 50  0000 C CNN
+F 2 "" H 4350 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4350 3600 50  0001 C CNN
+	3    4350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 4 1 601A8E46
+P 4350 4000
+F 0 "U?" H 4600 4100 50  0000 C CNN
+F 1 "74LS08" H 4650 3950 50  0000 C CNN
+F 2 "" H 4350 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4350 4000 50  0001 C CNN
+	4    4350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U?
+U 5 1 601A99C2
+P 4350 2050
+F 0 "U?" V 3983 2050 50  0000 C CNN
+F 1 "74LS08" V 4074 2050 50  0000 C CNN
+F 2 "" H 4350 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4350 2050 50  0001 C CNN
+	5    4350 2050
+	0    1    1    0   
+$EndComp
+Text HLabel 3600 2900 0    50   Input ~ 0
+INTENSITY
+Text HLabel 3950 3100 0    50   Input ~ 0
+RED
+Text HLabel 3950 3400 0    50   Input ~ 0
+GREEN
+Text HLabel 3950 3700 0    50   Input ~ 0
+BLUE
+Wire Wire Line
+	3600 2900 4050 2900
+Wire Wire Line
+	3600 2900 3600 3200
+Wire Wire Line
+	3600 3200 4050 3200
+Wire Wire Line
+	3600 3200 3600 3500
+Wire Wire Line
+	3600 3500 4050 3500
+Connection ~ 3600 3200
+Wire Wire Line
+	3950 3100 4050 3100
+Wire Wire Line
+	3950 3400 4050 3400
+Wire Wire Line
+	3950 3700 4050 3700
+Text HLabel 4850 3000 2    50   Output ~ 0
+IRED
+Text HLabel 4850 3300 2    50   Output ~ 0
+IGREEN
+Text HLabel 4850 3600 2    50   Output ~ 0
+IBLUE
+Wire Wire Line
+	4650 3000 4850 3000
+Wire Wire Line
+	4650 3300 4850 3300
+Wire Wire Line
+	4650 3600 4850 3600
+$Comp
+L power:GND #PWR?
+U 1 1 601F53BE
+P 3850 2050
+F 0 "#PWR?" H 3850 1800 50  0001 C CNN
+F 1 "GND" H 3855 1877 50  0000 C CNN
+F 2 "" H 3850 2050 50  0001 C CNN
+F 3 "" H 3850 2050 50  0001 C CNN
+	1    3850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 601F5B5D
+P 4850 2050
+F 0 "#PWR?" H 4850 1900 50  0001 C CNN
+F 1 "+5V" H 4865 2223 50  0000 C CNN
+F 2 "" H 4850 2050 50  0001 C CNN
+F 3 "" H 4850 2050 50  0001 C CNN
+	1    4850 2050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

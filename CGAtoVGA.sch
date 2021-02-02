@@ -1,0 +1,374 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB15_Male_HighDensity J?
+U 1 1 6019AFFD
+P 7400 3850
+F 0 "J?" H 7400 4717 50  0000 C CNN
+F 1 "DB15_Male_HighDensity" H 7400 4626 50  0000 C CNN
+F 2 "" H 6450 4250 50  0001 C CNN
+F 3 " ~" H 6450 4250 50  0001 C CNN
+	1    7400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DB9_Female J?
+U 1 1 6019D520
+P 3250 3800
+F 0 "J?" H 3168 3108 50  0000 C CNN
+F 1 "DB9_Female" H 3168 3199 50  0000 C CNN
+F 2 "" H 3250 3800 50  0001 C CNN
+F 3 " ~" H 3250 3800 50  0001 C CNN
+	1    3250 3800
+	-1   0    0    1   
+$EndComp
+Text Label 3550 4200 0    50   ~ 0
+GND
+Text Label 3550 4000 0    50   ~ 0
+NC
+Text Label 3550 3800 0    50   ~ 0
+RED
+Text Label 3550 3600 0    50   ~ 0
+GREEN
+Text Label 3550 3400 0    50   ~ 0
+BLUE
+Text Label 3550 4100 0    50   ~ 0
+INTENSITY
+Text Label 3550 3900 0    50   ~ 0
+NC
+Text Label 7100 4150 2    50   ~ 0
+RED
+Text Label 7100 3950 2    50   ~ 0
+GREEN
+Text Label 7100 3750 2    50   ~ 0
+BLUE
+Text Label 7100 3550 2    50   ~ 0
+NC
+Text Label 7100 3350 2    50   ~ 0
+GND
+Text Label 7100 4250 2    50   ~ 0
+GND
+Text Label 7100 4050 2    50   ~ 0
+GND
+Text Label 7100 3850 2    50   ~ 0
+GND
+Text Label 7100 3650 2    50   ~ 0
+GND
+Text Label 7100 3450 2    50   ~ 0
+GND
+Text Label 7700 3350 0    50   ~ 0
+NC
+Text Label 7700 3750 0    50   ~ 0
+H.SYNC
+Text Label 7700 3950 0    50   ~ 0
+NC
+Text Label 7700 4150 0    50   ~ 0
+NC
+$Sheet
+S 4400 3900 500  700 
+U 601A4514
+F0 "Sheet601A4513" 50
+F1 "INTENSITY-SPLITTER.sch" 50
+F2 "INTENSITY" I L 4400 4250 50 
+F3 "RED" I L 4400 4150 50 
+F4 "GREEN" I L 4400 4050 50 
+F5 "BLUE" I L 4400 3950 50 
+F6 "IRED" O R 4900 4350 50 
+F7 "IGREEN" O R 4900 4450 50 
+F8 "IBLUE" O R 4900 4550 50 
+$EndSheet
+Wire Wire Line
+	3550 3400 4250 3400
+Wire Wire Line
+	4250 3400 4250 3950
+Wire Wire Line
+	4250 3950 4400 3950
+Wire Wire Line
+	3550 3600 4200 3600
+Wire Wire Line
+	4200 3600 4200 4050
+Wire Wire Line
+	4200 4050 4400 4050
+Wire Wire Line
+	3550 3800 4150 3800
+Wire Wire Line
+	4150 3800 4150 4150
+Wire Wire Line
+	4150 4150 4400 4150
+Wire Wire Line
+	3550 4100 4100 4100
+Wire Wire Line
+	4100 4100 4100 4250
+Wire Wire Line
+	4100 4250 4400 4250
+Wire Wire Line
+	3550 4200 3750 4200
+Wire Wire Line
+	3750 4200 3750 4400
+$Comp
+L power:GND #PWR?
+U 1 1 601FD093
+P 3750 4400
+F 0 "#PWR?" H 3750 4150 50  0001 C CNN
+F 1 "GND" H 3755 4227 50  0000 C CNN
+F 2 "" H 3750 4400 50  0001 C CNN
+F 3 "" H 3750 4400 50  0001 C CNN
+	1    3750 4400
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 5600 3250 550  1100
+U 601FE22B
+F0 "Sheet601FE22A" 50
+F1 "DAC.sch" 50
+F2 "RED" I L 5600 3500 50 
+F3 "GREEN" I L 5600 3400 50 
+F4 "BLUE" I L 5600 3300 50 
+F5 "IRED" I L 5600 4100 50 
+F6 "IGREEN" I L 5600 4200 50 
+F7 "IBLUE" I L 5600 4300 50 
+F8 "aRED" O R 6150 3950 50 
+F9 "aGREEN" O R 6150 3850 50 
+F10 "aBLUE" O R 6150 3750 50 
+$EndSheet
+Wire Wire Line
+	4900 4350 5050 4350
+Wire Wire Line
+	5050 4350 5050 4100
+Wire Wire Line
+	5050 4100 5600 4100
+Wire Wire Line
+	4900 4450 5100 4450
+Wire Wire Line
+	5100 4450 5100 4200
+Wire Wire Line
+	5100 4200 5600 4200
+Wire Wire Line
+	4900 4550 5150 4550
+Wire Wire Line
+	5150 4550 5150 4300
+Wire Wire Line
+	5150 4300 5600 4300
+Wire Wire Line
+	4250 3300 5600 3300
+Wire Wire Line
+	4250 3300 4250 3400
+Connection ~ 4250 3400
+Wire Wire Line
+	4200 3600 4350 3600
+Wire Wire Line
+	4350 3600 4350 3400
+Wire Wire Line
+	4350 3400 5600 3400
+Connection ~ 4200 3600
+Wire Wire Line
+	4150 3800 4450 3800
+Wire Wire Line
+	4450 3800 4450 3500
+Wire Wire Line
+	4450 3500 5600 3500
+Connection ~ 4150 3800
+Wire Wire Line
+	6150 3750 7100 3750
+Wire Wire Line
+	6150 3850 6750 3850
+Wire Wire Line
+	6750 3850 6750 3950
+Wire Wire Line
+	6750 3950 7100 3950
+Wire Wire Line
+	6150 3950 6700 3950
+Wire Wire Line
+	6700 3950 6700 4150
+Wire Wire Line
+	6700 4150 7100 4150
+Wire Wire Line
+	7100 3350 6950 3350
+Wire Wire Line
+	6950 3350 6950 3450
+Wire Wire Line
+	6950 3450 7100 3450
+Wire Wire Line
+	6950 3450 6950 3650
+Wire Wire Line
+	6950 3650 7100 3650
+Connection ~ 6950 3450
+Wire Wire Line
+	6950 3650 6950 3850
+Wire Wire Line
+	6950 3850 7100 3850
+Connection ~ 6950 3650
+Wire Wire Line
+	6950 3850 6950 4050
+Wire Wire Line
+	6950 4050 7100 4050
+Connection ~ 6950 3850
+Wire Wire Line
+	6950 4050 6950 4250
+Wire Wire Line
+	6950 4250 7100 4250
+Connection ~ 6950 4050
+$Comp
+L power:GND #PWR?
+U 1 1 60211707
+P 6950 4250
+F 0 "#PWR?" H 6950 4000 50  0001 C CNN
+F 1 "GND" H 6955 4077 50  0000 C CNN
+F 2 "" H 6950 4250 50  0001 C CNN
+F 3 "" H 6950 4250 50  0001 C CNN
+	1    6950 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 4250
+Text Label 3550 3500 0    50   Italic 0
+V.SYNC
+Text Label 7700 3550 0    50   Italic 0
+V.SYNC
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60216286
+P 4500 5250
+F 0 "J?" H 4580 5242 50  0000 L CNN
+F 1 "Conn_01x02" H 4580 5151 50  0000 L CNN
+F 2 "" H 4500 5250 50  0001 C CNN
+F 3 "~" H 4500 5250 50  0001 C CNN
+	1    4500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60216BFC
+P 4300 5250
+F 0 "#PWR?" H 4300 5100 50  0001 C CNN
+F 1 "+5V" H 4315 5423 50  0000 C CNN
+F 2 "" H 4300 5250 50  0001 C CNN
+F 3 "" H 4300 5250 50  0001 C CNN
+	1    4300 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60217191
+P 4300 5350
+F 0 "#PWR?" H 4300 5100 50  0001 C CNN
+F 1 "GND" H 4305 5177 50  0000 C CNN
+F 2 "" H 4300 5350 50  0001 C CNN
+F 3 "" H 4300 5350 50  0001 C CNN
+	1    4300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Oscillator:NB3N502 U?
+U 1 1 6021B236
+P 9350 2800
+F 0 "U?" H 9350 2119 50  0000 C CNN
+F 1 "NB3N502" H 9350 2210 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9400 2050 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NB3N502-D.PDF" H 9400 1950 50  0001 C CNN
+	1    9350 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6021BCAA
+P 10450 2700
+F 0 "#PWR?" H 10450 2450 50  0001 C CNN
+F 1 "GND" H 10455 2527 50  0000 C CNN
+F 2 "" H 10450 2700 50  0001 C CNN
+F 3 "" H 10450 2700 50  0001 C CNN
+	1    10450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 2700 9900 2700
+Wire Wire Line
+	9750 2600 10450 2600
+Wire Wire Line
+	10450 2600 10450 2700
+Connection ~ 10450 2700
+Text Label 3550 3700 0    50   Italic 0
+H.SYNC
+Text Label 9750 2900 0    50   Italic 0
+H.SYNC
+Wire Wire Line
+	9750 2800 9900 2800
+Wire Wire Line
+	9900 2800 9900 2700
+Connection ~ 9900 2700
+Wire Wire Line
+	9900 2700 9750 2700
+Wire Wire Line
+	8950 2700 8200 2700
+Wire Wire Line
+	8200 2700 8200 3750
+Wire Wire Line
+	8200 3750 7700 3750
+$Comp
+L power:GND #PWR?
+U 1 1 60226591
+P 9350 2300
+F 0 "#PWR?" H 9350 2050 50  0001 C CNN
+F 1 "GND" V 9355 2172 50  0000 R CNN
+F 2 "" H 9350 2300 50  0001 C CNN
+F 3 "" H 9350 2300 50  0001 C CNN
+	1    9350 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60226D96
+P 9350 3300
+F 0 "#PWR?" H 9350 3150 50  0001 C CNN
+F 1 "+5V" H 9365 3473 50  0000 C CNN
+F 2 "" H 9350 3300 50  0001 C CNN
+F 3 "" H 9350 3300 50  0001 C CNN
+	1    9350 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60227A13
+P 7100 2000
+F 0 "#PWR?" H 7100 1850 50  0001 C CNN
+F 1 "+5V" H 6950 2150 50  0000 C CNN
+F 2 "" H 7100 2000 50  0001 C CNN
+F 3 "" H 7100 2000 50  0001 C CNN
+	1    7100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60227E7D
+P 7400 2000
+F 0 "#PWR?" H 7400 1750 50  0001 C CNN
+F 1 "GND" H 7405 1827 50  0000 C CNN
+F 2 "" H 7400 2000 50  0001 C CNN
+F 3 "" H 7400 2000 50  0001 C CNN
+	1    7400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6022852B
+P 7250 2000
+F 0 "C?" V 6998 2000 50  0000 C CNN
+F 1 "0.01uF" V 7089 2000 50  0000 C CNN
+F 2 "" H 7288 1850 50  0001 C CNN
+F 3 "~" H 7250 2000 50  0001 C CNN
+	1    7250 2000
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
